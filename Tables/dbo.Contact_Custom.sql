@@ -1,0 +1,43 @@
+CREATE TABLE [dbo].[Contact_Custom]
+(
+[SSB_CRMSYSTEM_Contact_ID__c] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[SSB_CRMSYSTEM_SSID_Winner__c] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SSB_CRMSYSTEM_SSID_Winner_SourceSystem__c] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SSB_CRMSYSTEM_SSID_TIX__c] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SSB_CRMSYSTEM_DimCustomerID__c] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AccountId] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CRMProcess_UpdatedDate] [datetime] NULL,
+[PersonOtherPhone] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PersonEmail] [varchar] (256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PersonHomePhone] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PersonBirthdate] [date] NULL,
+[SSB_CRMSYSTEM_Last_Ticket_Purchase_Date__c] [date] NULL,
+[SSB_CRMSYSTEM_Football_STH__c] [bit] NULL,
+[SSB_CRMSYSTEM_Football_Rookie__c] [bit] NULL,
+[SSB_CRMSYSTEM_Football_Partial__c] [bit] NULL,
+[SSB_CRMSYSTEM_Men_s_Basketball_STH__c] [bit] NULL,
+[SSB_CRMSYSTEM_Men_s_Basketball_Rookie__c] [bit] NULL,
+[SSB_CRMSYSTEM_Men_s_Basketball_Partial__c] [bit] NULL,
+[SSB_CRMSYSTEM_Last_Donation_Date__c] [date] NULL,
+[SSB_CRMSYSTEM_Donor_ID__c] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SSB_CRMSYSTEM_Donor_Warning__c] [bit] NULL,
+[SSB_CRMSYSTEM_Development_Owner__c] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SSB_CRMSYSTEM_Total_Priority_Points__c] [decimal] (10, 2) NULL,
+[SSB_CRMSYSTEM_Priority_Point_Rank__c] [int] NULL,
+[SSB_CRMSYSTEM_Customer_Type__c] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SSB_CRMSYSTEM_Customer_Comments__c] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SSB_CRMSYSTEM_Adobe_Unsubscribe__c] [bit] NULL,
+[SSB_CRMSYSTEM_Last_Adobe_Engagement_Date__c] [date] NULL,
+[Football_Rank__c] [nvarchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Men_s_Basketball_Rank__c] [nvarchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Football_YOP__c] [nvarchar] (5) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Men_s_Basketball_YOP__c] [nvarchar] (5) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Women_s_Basketball_YOP__c] [nvarchar] (5) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Football_Comp_Tickets__c] [bit] NULL,
+[Men_s_Basketball_Comp_Tickets__c] [bit] NULL,
+[PersonMobilePhone] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[service_owner__c] [nvarchar] (18) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+GO
+ALTER TABLE [dbo].[Contact_Custom] ADD CONSTRAINT [PK_Contact_Custom] PRIMARY KEY CLUSTERED  ([SSB_CRMSYSTEM_Contact_ID__c])
+GO
